@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shamitha's Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./projects.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="nav_inner">
+                <a href="./index.html" class="logo">
+                    Shamitha
+                </a>
+                <div class="menu" id="menu">
+                    <a href="index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./skills.html">Skills</a>
+                    <a href="./projects.html">Projects</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+
+                <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="projects_main">
+        <div class="pcon1">
+            <h5><span style="color: gray;">$</span> ~/projects</h5>
+            <h1>Projects</h1>
+            <p>Real security engagements, a trained ML model, and a full UI/UX redesign </p>
+        </div>
+        <div class="pcon2">
+            <div class="box">
+                <h2>Zero-Day Attack Simulation</h2> 
+                <p>Simulated a full attack chain in an isolated Kali Linux + Ubuntu lab with two teammates - 
+                    network recon, SSH credential brute-forcing with Hydra, privilege escalation, 
+                    and a persistent SSH-key backdoor - then analyzed auth logs to detect the intrusion and wrote hardening recommendations (MFA, least-privilege sudo).</p>
+                <div class="tech">
+                    <div>Kali Linux</div>
+                    <div>Nmap</div>
+                    <div>Hydra</div>
+                    <div>VAPT</div>
+                </div>
+                <a href="https://github.com/Shamitha-2330/Zero-Day-Attack-Simulation-and-Detection" class="link" target="_blank">View Project</a>
+            </div>
+            <div class="box">
+                <h3>Cloud Logging & Threat Monitoring</h3>
+                <p>Built an AWS EC2 security-monitoring pipeline with a teammate - a CloudWatch agent streaming auth logs into a custom "failed SSH key attempts" metric, an alarm with SNS email alerts, and a Flask + Boto3 dashboard showing live alarm status - which caught a real suspicious external login attempt during testing.</p>
+                <div class="tech">
+                    <div>AWS EC2</div>
+                    <div>CloudWatch</div>
+                    <div>SNS</div>
+                    <div>Flask</div>
+                </div>
+                <a href="https://github.com/Shamitha-2330/Cloud-Logging-and-Threat-Monitoring-AWS" class="link" target="_blank">View Project</a>
+            </div>
+            <div class="box">
+                <h3>YOLOv8 Arecanut Detection</h3>
+                <p>Trained a custom YOLOv8 model with a four-person team on 350 hand-annotated satellite images to detect arecanut, coconut and paddy plantations plus water sources - comparing CPU vs. GPU training and reaching 0.90 mAP@0.5 with ~39x faster inference on GPU.</p>
+                <div class="tech">
+                    <div>Python</div>
+                    <div>YOLOv8</div>
+                    <div>Computer Vision</div>
+                    <div>Google Colab</div>
+                </div>
+                <a href="https://drive.google.com/drive/folders/1xwY0QIBJZr_eiQDvZEr-cp-mJNhhh4rT" class="link" target="_blank">View Project</a>
+            </div>
+            <div class="box">
+                <h3>Real-Time Agriculture Intelligence System</h3>
+                <p>Built an end-to-end real-time pipeline that streams weather data for five Indian farming regions through Apache Kafka into PostgreSQL, scores crop suitability with a weighted rule-based engine, and visualizes the results on a live Apache Superset dashboard.</p>
+                <div class="tech">
+                    <div>Python</div>
+                    <div>Apache Kafka</div>
+                    <div>PostgreSQL</div>
+                    <div>Apache Superset</div>
+                    <div>WeatherAPI</div>
+                </div>
+                <a href="https://github.com/Shamitha-2330/Real-Time_crop_recommendation_system" class="link" target="_blank">View Project</a>
+            </div>
+            <div class="box">
+                <h3>WhatsApp Desktop - UI/UX Redesign</h3>
+                <p>Led a full UI/UX teardown and redesign of WhatsApp Desktop in Figma with two teammates - diagnosing workspace, navigation and customization gaps, then designing a collapsible sidebar, split-screen multi-chat view, theming, message scheduling and stronger accessibility across 40+ wireframes and high-fidelity screens.</p>
+                <div class="tech">
+                    <div>Figma</div>
+                    <div>UI/UX</div>
+                    <div>Prototyping</div>
+                    <div>Accessibility</div>
+                </div>
+                <a href="https://drive.google.com/file/d/1iAIxWpEIll4alkM4z4W5rVAAshvYlsPw/view?usp=sharing" class="link" target="_blank">View Project</a>
+            </div>
+            <div class="box">
+                <h3>Selenium Automation Testing - PHPTravels Admin Panel</h3>
+                <p>Built a Python + Selenium WebDriver test suite for the PHPTravels admin panel, covering login and logout validation, every major locator strategy, tables, checkboxes, alerts, nested iframes, broken-link checks and responsive viewport testing.</p>
+                <div class="tech">
+                    <div>Python</div>
+                    <div>Selenium WebDriver</div>
+                    <div>ChromeDriver</div>
+                    <div>Test Automation</div>
+                </div>
+                <a href="https://github.com/Shamitha-2330/selenium_phptravels_automation" class="link" target="_blank">View Project</a>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer_box">
+            <div class="c1">
+                <a href="index.html">Shamitha</a>
+                <p style="padding-top: 10px;">
+                    Cybersecurity-trained software engineer building secure, usable applications from Bengaluru, India.
+                </p>
+            </div>
+            <div class="c2">
+                <p>Navigate</p>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="c3">
+                <p>connect</p>
+                <div class="links">
+                    <a href="mailto:shamithamudur@gmail.com" target="_blank">Email</a>
+                    <a href="https://github.com/Shamitha-2330" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/shamitha30/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bar">
+            <div class="b1">© 2026 Shamitha. Built with HTML, CSS & JavaScript.</div>
+            <div class="b2">Bengaluru, India</div>
+        </div>
+    </footer>
+
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("menu");
+
+    hamburger.addEventListener("click", function () {
+        const isOpen = menu.classList.toggle("active");
+
+        hamburger.classList.toggle("active");
+
+        hamburger.setAttribute("aria-expanded", isOpen);
+    });
+    menu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", function () {
+            menu.classList.remove("active");
+            hamburger.classList.remove("active");
+            hamburger.setAttribute("aria-expanded", "false");
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,349 @@
+* {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.main_contact {
+    background: #0c1116;
+    padding-bottom: 80px;
+}
+.main_contact .c_con1 {
+    width: 80%;
+    max-width: 1400px;
+    margin: auto;
+
+    padding: 100px 20px 40px;
+
+    min-height: 280px;
+    height: auto;
+
+    color: #2fe3c4;
+}
+
+.main_contact .c_con1 h1 {
+    color: white;
+    font-size: clamp(38px, 5vw, 60px);
+    line-height: 1.1;
+    margin-top: 10px;
+}
+
+.main_contact .c_con1 p {
+    color: gray;
+    font-size: 16px;
+    width: 60%;
+    max-width: 750px;
+    line-height: 1.6;
+}
+.main_contact .c_con2 {
+    width: 80%;
+    max-width: 1400px;
+    margin: auto;
+    min-height: 650px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 30px 0 60px;
+}
+.main_contact .c_con2 .b1 {
+    width: 40%;
+    height: auto;
+    padding: 15px;
+}
+.main_contact .c_con2 .b1 h2 {
+    color: white;
+    margin: 20px 0;
+    font-size: 35px;
+    font-weight: 600;
+}
+.main_contact .c_con2 .b1 .contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.main_contact .c_con2 .b1 .contact .icon {
+    flex: 0 0 45px;
+    width: 45px;
+    height: 45px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_contact .c_con2 .b1 .contact .icon img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+}
+
+.main_contact .c_con2 .b1 .contact .text {
+    width: auto;
+    height: auto;
+    min-width: 0;
+}
+
+.main_contact .c_con2 .b1 .contact .text a {
+    text-decoration: none;
+    color: white;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    transition: color 0.2s ease;
+}
+
+.main_contact .c_con2 .b1 .contact .text a:hover {
+    color: #2fe3c4;
+}
+
+.main_contact .c_con2 .b2 {
+    width: 60%;
+    height: auto;
+    border: solid 1px #293735;
+    color: white;
+    border-radius: 16px;
+    padding: 30px;
+    background: black;
+    box-sizing: border-box;
+}
+
+.main_contact .c_con2 .b2 h1 {
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.main_contact .c_con2 .b2 label {
+    color: gray;
+    font-size: small;
+    display: block;
+    padding-top: 20px;
+}
+.main_contact .c_con2 .b2 input {
+    box-sizing: border-box;
+    border: solid 1px #293735;
+    margin-top: 10px;
+    height: 42px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    background: #0c1116;
+    color: white;
+}
+.main_contact .c_con2 .b2 .form_row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+.main_contact .c_con2 .b2 .form_row .form_field {
+    padding: 0;
+    width: 50%;
+}
+
+.main_contact .c_con2 .b2 .form_row .form_field label {
+    color: gray;
+    font-size: small;
+    padding-top: 20px;
+}
+
+.main_contact .c_con2 .b2 .form_row .form_field input {
+    margin-top: 10px;
+    height: 42px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.main_contact .c_con2 .b2 textarea {
+    box-sizing: border-box;
+    margin-top: 15px;
+    background: #0c1116;
+    border-radius: 8px;
+    border: solid 1px #293735;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    min-height: 180px;
+    height: auto;
+    resize: vertical;
+    font-family: inherit;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2fe3c4;
+    box-shadow: 0 0 0 3px rgba(0, 229, 208, 0.15);
+}
+
+.main_contact .c_con2 .b2 button {
+    margin-top: 15px;
+    color: black;
+    font-weight: bolder;
+    font-size: medium;
+    background: #67b1a4;
+    border-radius: 8px;
+    min-height: 45px;
+    padding: 10px 20px;
+    width: auto;
+    border: solid 1px black;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.main_contact .c_con2 .b2 button:hover {
+    background: #2fe3c4;
+}
+
+.main_contact .c_con2 .b2 button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@media (max-width: 1024px) {
+    .main_contact .c_con1,
+    .main_contact .c_con2 {
+        width: 90%;
+    }
+
+    .main_contact .c_con1 p {
+        width: 80%;
+    }
+
+    .main_contact .c_con2 {
+        gap: 30px;
+    }
+
+    .main_contact .c_con2 .b1 {
+        width: 40%;
+    }
+
+    .main_contact .c_con2 .b2 {
+        width: 60%;
+        padding: 25px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .main_contact {
+        padding-bottom: 50px;
+    }
+
+    .main_contact .c_con1 {
+        width: 90%;
+        padding: 80px 10px 30px;
+        min-height: 220px;
+    }
+
+    .main_contact .c_con1 h1 {
+        font-size: clamp(38px, 10vw, 52px);
+    }
+
+    .main_contact .c_con1 p {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .main_contact .c_con2 {
+        width: 90%;
+        min-height: 0;
+        height: auto;
+        flex-direction: column;
+        gap: 50px;
+        padding: 20px 0 40px;
+    }
+
+    .main_contact .c_con2 .b1 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .main_contact .c_con2 .b1 h2 {
+        font-size: 30px;
+        margin: 10px 0 25px;
+    }
+
+    .main_contact .c_con2 .b1 .contact {
+        gap: 15px;
+        margin-bottom: 18px;
+    }
+
+    .main_contact .c_con2 .b2 {
+        width: 100%;
+        padding: 25px;
+        border-radius: 14px;
+    }
+
+    .main_contact .c_con2 .b2 .form_row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .main_contact .c_con2 .b2 .form_row .form_field {
+        width: 100%;
+    }
+
+    .main_contact .c_con2 .b2 input {
+        width: 100%;
+    }
+
+    .main_contact .c_con2 .b2 textarea {
+        width: 100%;
+        min-height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .main_contact .c_con1 {
+        width: 92%;
+        padding: 70px 5px 25px;
+    }
+
+    .main_contact .c_con1 h1 {
+        font-size: 40px;
+    }
+
+    .main_contact .c_con1 p {
+        font-size: 14px;
+    }
+
+    .main_contact .c_con2 {
+        width: 92%;
+    }
+
+    .main_contact .c_con2 .b1 h2 {
+        font-size: 27px;
+    }
+
+    .main_contact .c_con2 .b1 .contact {
+        gap: 12px;
+    }
+
+    .main_contact .c_con2 .b1 .contact .icon {
+        flex-basis: 40px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .main_contact .c_con2 .b1 .contact .text a {
+        font-size: 14px;
+    }
+
+    .main_contact .c_con2 .b2 {
+        padding: 20px;
+    }
+
+    .main_contact .c_con2 .b2 h1 {
+        font-size: 25px;
+    }
+
+    .main_contact .c_con2 .b2 button {
+        width: 100%;
+    }
+}

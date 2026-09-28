@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shamitha's Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./about.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="nav_inner">
+                <a href="./index.html" class="logo">
+                    Shamitha
+                </a>
+                <div class="menu" id="menu">
+                    <a href="index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./skills.html">Skills</a>
+                    <a href="./projects.html">Projects</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+
+                <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="about_main">
+        <div class="acon1">
+            <h5><span style="color: gray;">$</span> ~/about</h5>
+            <h1>About me</h1>
+            <p>How a cybersecurity degree turned into a full-stack developer.</p>
+        </div>
+        <div class="acon2">
+            <div class="b1">
+                <h1>My story</h1>
+                <p>I started out wanting to understand how systems get broken, four years into a BCA (Hons.) in Cybersecurity at Chanakya University which made me learn to think like an attacker: reconnaissance, exploitation, reporting. An internship doing real VAPT work confirmed I loved that process, but it also left me curious about the other side of the fence the people actually writing the applications I was testing.</p>
+                <p>That curiosity is why, right after graduating, I joined a Python Full Stack Development program. I wanted the skill to not just find a broken authentication flow, but to build the correct one. I'm now comfortable across Python, Django, SQL and front-end fundamentals, and I bring a security-first mindset to everything I build - input validation and access control aren't an afterthought for me, they're the first thing I check.</p>
+                <p>I'm looking for an entry-level role where that combination is useful: a Cybersecurity Analyst position, a Python Full Stack Developer role, or ideally something in between security-focused development.</p>
+                <h1>Language Known</h1>
+                    <ul class="skills">
+                        <li>Kannada</li>
+                        <li>English</li>
+                        <li>Hindi</li>
+                        <li>Spanish(Basic)</li>
+                    </ul>
+            </div>
+            
+            <div class="b2">
+                <h1>Timeline</h1>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="content">
+                            <div class="date">Jun 2026 — Present</div>
+                            <h2>Python Full Stack Training</h2>
+                            <div class="company">QSpiders</div>
+                            <p>
+                                Training in Python, Django, Oracle SQL and web
+                                technologies (HTML/CSS/JS) to build database-backed,
+                                production-style applications.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="content">
+                            <div class="date">Jan 2026 — May 2026</div>
+                            <h2>Cybersecurity Intern</h2>
+                            <div class="company">Fidrox Technologies Pvt. Ltd.</div>
+                            <p>
+                               Performed VAPT using Burp Suite Pro, Nessus, MobSF, Nmap and Active Directory. 
+                               Authored professional, client-ready VAPT reports.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="content">
+                            <div class="date">2022 — May 2026</div>
+                            <h2>BCA (Hons.) in Cybersecurity</h2>
+                            <div class="company">Chanakya University · CGPA 9.71</div>
+                            <p>
+                                Core cybersecurity coursework plus a Cloud Computing & Cloud Application Development elective,
+                                 with hands-on AWS (CloudWatch, EC2) work.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="acon3">
+            <h1>Certifications & recognition</h1>
+            <div class="box">
+                <ul class="cert">
+                    <li>Introduction to Cyber Security — Cisco</li>
+                    <li>Security Principles in Cloud Computing — Google</li>
+                    <li>Introduction to Digital Forensics — Blue Team</li>
+                    <li>NCC 'B' Certificate</li>
+                    <li>2nd Prize, GeeksforGeeks Hackfest 2026 and got selected for final round</li>
+                    <li>Presented a poster, International IKS Conference</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer_box">
+            <div class="c1">
+                <a href="index.html">Shamitha</a>
+                <p style="padding-top: 10px;">
+                    Cybersecurity-trained software engineer building secure, usable applications from Bengaluru, India.
+                </p>
+            </div>
+            <div class="c2">
+                <p>Navigate</p>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="c3">
+                <p>connect</p>
+                <div class="links">
+                    <a href="mailto:shamithamudur@gmail.com">Email</a>
+                    <a href="https://github.com/Shamitha-2330">GitHub</a>
+                    <a href="https://linkedin.com/in/shamitha30/">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bar">
+            <div class="b1">© 2026 Shamitha. Built with HTML, CSS & JavaScript.</div>
+            <div class="b2">Bengaluru, India</div>
+        </div>
+    </footer>
+
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("menu");
+
+    hamburger.addEventListener("click", function () {
+        const isOpen = menu.classList.toggle("active");
+
+        hamburger.classList.toggle("active");
+
+        hamburger.setAttribute("aria-expanded", isOpen);
+    });
+    menu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", function () {
+            menu.classList.remove("active");
+            hamburger.classList.remove("active");
+            hamburger.setAttribute("aria-expanded", "false");
+        });
+    });
+</script>
+
+</body>
+</html>

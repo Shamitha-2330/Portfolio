@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shamitha's Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="nav_inner">
+                <a href="./index.html" class="logo">
+                    Shamitha
+                </a>
+                <div class="menu" id="menu">
+                    <a href="index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./skills.html">Skills</a>
+                    <a href="./projects.html">Projects</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+
+                <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="main_con1">
+            <div class="c1">
+                <div class="tagline">Aspiring Full stack developer</div>
+                <h1>Hi, I'm Shamitha - I build software.</h1>
+                <h4>Python full stack developer</h4>
+                <div class="intro">
+                    A BCA (Hons.) Cybersecurity graduate now focused on Python Full Stack Development - Python, Django, SQL and JavaScript. That security background shapes how I build: I think about what can go wrong before I ship it.
+                </div>
+                <div class="btn">
+                    <a href="./projects.html">View Projects</a>
+                    <a href="./assets/resume.pdf" target="_blank">Download Resume</a>
+                </div>
+            </div>
+            <div class="c2">
+                <div class="terminal-header">
+                    <div class="dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+
+                    <span class="terminal-title">Shamitha@portfolio:</span>
+                </div>
+
+                <div class="terminal-content">
+                    <div class="command">
+                        <span class="prompt">$</span>
+                        <span>whoami</span>
+                    </div>
+                    <p class="output">
+                        &gt; Shamitha - security-minded full stack developer
+                    </p>
+
+                    <div class="command">
+                        <span class="prompt">$</span>
+                        <span>nmap --scan-type=vuln target.local</span>
+                    </div>
+
+                    <p class="output">
+                        &gt; 0 critical, 0 high -
+                        <span class="green-text">clean report</span>
+                    </p>
+
+                    <div class="command">
+                        <span class="prompt">$</span>
+                        <span>python manage.py runserver</span>
+                    </div>
+
+                    <p class="output">
+                        &gt; Starting Django app on
+                        <span class="blue-text">127.0.0.1:8000</span> ...
+                    </p>
+
+                    <p class="output">
+                        &gt; <span class="green-text">System check identified no issues</span>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="main_con2">
+            <h5><span style="color: gray;">$</span>&nbsp;&nbsp;~/about-me</h5>
+            <h1>Two disciplines, one engineer.</h1>
+            <h3>I don't treat security and development 
+                as separate tracks - understanding how software breaks makes me better at building it right the first time.</h3>
+            <div class="c1">
+                <div class="cyber">
+                    <h1>Cybersecurity</h1>
+                    <h3>VAPT internship experience covering web, mobile and network layers - from recon to a client-ready report. Comfortable across the whole offensive-security workflow.</h3>
+                    <div class="skills">
+                        <button>Burpsuite</button>
+                        <button>Nmap</button>
+                        <button>Nessus</button>
+                        <button>MobSF</button>
+                        <button>Kali Linux</button>
+                        <button>Active Directory</button>
+                    </div>
+                </div>
+                <div class="python">
+                    <h1>Python Full Stack</h1>
+                    <h3>Currently training in Python full stack development - building database-backed web apps with Django, from schema design through to a deployed, working UI.</h3>
+                    <div class="skills" id="ps">
+                        <button>Python</button>
+                        <button>Django</button>
+                        <button>Oracle SQL</button>
+                        <button>JavaScript</button>
+                        <button>HTML/CSS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_box">
+            <div class="c1">
+                <a href="index.html">Shamitha</a>
+                <p style="padding-top: 10px;">
+                    Cybersecurity-trained software engineer building secure, usable applications from Bengaluru, India.
+                </p>
+            </div>
+            <div class="c2">
+                <p>Navigate</p>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="c3">
+                <p>connect</p>
+                <div class="links">
+                    <a href="mailto:shamithamudur@gmail.com">Email</a>
+                    <a href="https://github.com/Shamitha-2330">GitHub</a>
+                    <a href="https://linkedin.com/in/shamitha30/">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bar">
+            <div class="b1">© 2026 Shamitha. Built with HTML, CSS & JavaScript.</div>
+            <div class="b2">Bengaluru, India</div>
+        </div>
+    </footer>
+
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("menu");
+
+    hamburger.addEventListener("click", function () {
+        const isOpen = menu.classList.toggle("active");
+
+        hamburger.classList.toggle("active");
+
+        hamburger.setAttribute("aria-expanded", isOpen);
+    });
+    menu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", function () {
+            menu.classList.remove("active");
+            hamburger.classList.remove("active");
+            hamburger.setAttribute("aria-expanded", "false");
+        });
+    });
+</script>
+</body>
+</html>
