@@ -36,7 +36,6 @@ img {
     max-width: 1400px;
     height: 100%;
     margin: auto;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,12 +54,10 @@ img {
 
 .nav_inner .menu {
     width: auto;
-
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 35px;
-
     font-weight: lighter;
 }
 
@@ -79,10 +76,10 @@ img {
     font-weight: bold;
 }
 
-
 .main {
     background: #0c1116;
 }
+
 .main_con1 {
     margin: auto;
     min-height: 100vh;
@@ -105,7 +102,7 @@ img {
     gap: 14px;
 }
 
-.main .main_con1 .c1 .tagline{
+.main .main_con1 .c1 .tagline {
     color: #2fe3c4;
     font-size: clamp(16px, 2vw, 20px);
 }
@@ -209,35 +206,29 @@ img {
 .terminal-title {
     color: #60777b;
     font-family: "Courier New", monospace;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
-
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
 .terminal-content {
-    padding: 25px;
-
+    padding: 22px 24px;
     font-family: "Courier New", monospace;
-    font-size: clamp(13px, 1.4vw, 18px);
-
+    font-size: 15px;
     line-height: 1.5;
-
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
 .command {
     display: flex;
-    gap: 12px;
-
+    gap: 10px;
     color: #d9e1e2;
     font-weight: bold;
-
-    margin-bottom: 6px;
-
-    white-space: nowrap;
+    margin-bottom: 5px;
+    white-space: normal;
+    overflow-wrap: anywhere;
 }
 
 .prompt {
@@ -247,8 +238,9 @@ img {
 
 .output {
     color: #91a5a6;
-    margin: 0 0 25px 0;
+    margin: 0 0 20px 0;
     line-height: 1.5;
+    overflow-wrap: anywhere;
 }
 
 .green-text {
@@ -285,14 +277,11 @@ img {
 .main .main_con2 > h3 {
     color: gray;
     font-size: clamp(16px, 1.5vw, 18px);
-
     width: 60%;
     max-width: 850px;
-
     font-weight: lighter;
     line-height: 1.6;
 }
-
 
 .main .main_con2 .c1 {
     width: 100%;
@@ -307,7 +296,6 @@ img {
 
 .main .main_con2 .c1 .cyber,
 .main .main_con2 .c1 .python {
-    margin: 20px;
     width: 50%;
     min-height: 300px;
     height: auto;
@@ -345,7 +333,6 @@ img {
 .main .main_con2 .c1 .cyber h3 {
     margin-bottom: 20px;
 }
-
 
 .main .main_con2 .c1 .skills {
     width: 100%;
@@ -569,7 +556,6 @@ footer .footer_bar .b2 {
 
 
 @media (max-width: 768px) {
-
     .nav {
         height: 65px;
     }
@@ -607,7 +593,6 @@ footer .footer_bar .b2 {
     .nav_inner .menu.active {
         right: 0;
     }
-
     .nav_inner .menu a {
         display: block;
         width: 100%;
@@ -617,16 +602,13 @@ footer .footer_bar .b2 {
         text-decoration: none;
         border-bottom: 1px solid #293735;
     }
-
     .nav_inner .menu a:hover,
     .nav_inner .menu a.active {
         color: #2fe3c4;
     }
-
     .hamburger.active span:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
     }
-
     .hamburger.active span:nth-child(2) {
         opacity: 0;
     }
@@ -634,7 +616,116 @@ footer .footer_bar .b2 {
     .hamburger.active span:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
     }
+
+    .main_con1 {
+        width: 90%;
+        min-height: auto;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 100px 0 50px;
+        gap: 40px;
+    }
+
+    .main .main_con1 .c1 {
+        width: 100%;
+    }
+
+    .main .main_con1 .c1 h1 {
+        font-size: clamp(34px, 9vw, 45px);
+    }
+
+    .main .main_con1 .c1 .intro {
+        font-size: 16px;
+    }
+
+    .main .main_con1 .c1 .btn {
+        width: 100%;
+        max-width: none;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .main .main_con1 .c1 .btn a {
+        width: auto;
+        min-width: 160px;
+    }
+
+    .main .main_con1 .c2 {
+        width: 100%;
+        max-width: none;
+        min-height: 320px;
+    }
+
+    .terminal-content {
+        padding: 18px;
+        font-size: 13px;
+    }
+
+    .main .main_con2 {
+        width: 90%;
+        min-height: auto;
+        padding-bottom: 60px;
+    }
+
+    .main .main_con2 > h1 {
+        font-size: 30px;
+    }
+
+    .main .main_con2 > h3 {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .main .main_con2 .c1 {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    .main .main_con2 .c1 .cyber,
+    .main .main_con2 .c1 .python {
+        width: 100%;
+        min-height: 280px;
+    }
+
+    .main .main_con2 .c1 h3 {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .main .status {
+        width: 90%;
+    }
+
+    .main .status p {
+        font-size: 14px;
+    }
+
+    footer .footer_box {
+        width: 90%;
+
+        flex-direction: column;
+
+        gap: 30px;
+
+        padding: 40px 0;
+    }
+
+    footer .footer_box .c1,
+    footer .footer_box .c2,
+    footer .footer_box .c3 {
+        width: 100%;
+    }
+
+    footer .footer_bar {
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
 }
+
+
 
 @media (max-width: 480px) {
 
@@ -646,5 +737,67 @@ footer .footer_bar .b2 {
         width: 260px;
         max-width: 82vw;
     }
+    .main_con1 {
+        padding-top: 90px;
+    }
+    .main .main_con1 .c1 h1 {
+        font-size: 34px;
+    }
+    .main .main_con1 .c1 h4 {
+        font-size: 20px;
+    }
+    .main .main_con1 .c1 .btn {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .main .main_con1 .c1 .btn a {
+        width: 100%;
+    }
+    .main .main_con1 .c2 {
+        min-height: 280px;
+    }
+    .terminal-header {
+        padding: 0 12px;
+    }
+    .dots {
+        margin-right: 10px;
+        gap: 6px;
+    }
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .terminal-title {
+        font-size: 12px;
+    }
+
+    .terminal-content {
+        padding: 15px;
+        font-size: 11px;
+    }
+
+
+    .main .main_con2 > h1 {
+        font-size: 27px;
+    }
+
+    .main .main_con2 .c1 .cyber,
+    .main .main_con2 .c1 .python {
+        padding: 15px;
+    }
+
+    .main .main_con2 .c1 .cyber button,
+    .main .main_con2 .c1 .python button {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+
+    footer .footer_bar {
+        font-size: 13px;
+    }
 }
+
+
 
