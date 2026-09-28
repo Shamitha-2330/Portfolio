@@ -1,6 +1,6 @@
 #  Shamitha's Portfolio
 
-Cybersecurity & Digital Forensics | Python Full Stack | Cloud | VAPT
+Cybersecurity | Python Full Stack | Cloud | VAPT
 
 Welcome to my personal portfolio website. This website showcases my skills, projects, certifications, and experience in cybersecurity, cloud computing, and full-stack development.
 
