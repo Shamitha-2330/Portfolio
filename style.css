@@ -284,6 +284,7 @@ img {
 }
 
 .main .main_con2 .c1 {
+    margin: auto;
     width: 80%;
     min-height: 340px;
     height: auto;
