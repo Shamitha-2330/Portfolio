@@ -293,6 +293,7 @@ img {
     align-items: stretch;
     gap: 25px;
     color: white;
+    margin: auto;
 }
 
 .main .main_con2 .c1 .cyber,
